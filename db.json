@@ -1,0 +1,48 @@
+{
+  "ads": [
+    {
+      "id": 1,
+      "name": "Bicicleta de montaña",
+      "description": "Perfecta para iniciarse en el mountain bike.",
+      "price": 150,
+      "type": "venta",
+      "image": "https://irunabikes.com/wp-content/uploads/foto-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Libros de segunda mano",
+      "description": "Variedad de novelas y ensayos.",
+      "price": 5,
+      "type": "venta",
+      "image": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/a1312cd6-e3a5-4f20-8c03-62d495a154af.__CR655,0,2133,1600_PT0_SX600_V1___.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Busco mesa para salón",
+      "description": "Preferiblemente de madera y extensible.",
+      "price": null,
+      "type": "compra",
+      "image": "https://ibsa.cl/imagenes/default/producto/default.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Sofa de tres plazas",
+      "description": "Cómodo y en buen estado.",
+      "price": 200,
+      "type": "venta",
+      "image": "https://sofaralia.com/wp-content/uploads/2024/04/Sofa-Extraible-XXL-Ainhoa-01.jpg"
+    }
+  ],
+  "users": [
+    {
+      "username": "user1",
+      "password": "$2b$10$Tsb3EGXgxc3KjXswWIWyh.4aF70AS.6PlOelOX3CPsO1hQzzWArPW",
+      "id": 1
+    },
+    {
+      "username": "user2",
+      "password": "$2b$10$Tsb3EGXgxc3KjXswWIWyh.4aF70AS.6PlOelOX3CPsO1hQzzWArPW",
+      "id": 2
+    }
+  ]
+}
