@@ -1,0 +1,252 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  padding-top: 60px;
+}
+
+header {
+  background-color: #34435b;
+  color: white;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#userActions {
+  display: flex;
+  gap: 10px;
+}
+
+header button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+header button:hover {
+  background-color: #0056b3;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#adListContainer ul {
+  list-style: none;
+  padding: 0;
+}
+
+#adListContainer li {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#adListContainer li img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+#adListContainer .ad-info {
+  flex-grow: 1;
+}
+
+#adListContainer li h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+#adListContainer li .price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#adListContainer li .price {
+  font-weight: bold;
+  color: green;
+  margin-bottom: 5px;
+}
+
+#adListContainer li .view-detail {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  flex-shrink: 0;
+}
+
+#adListContainer li .view-detail:hover {
+  background-color: #0056b3;
+}
+
+#adListContainer .error, .message-area.message-error {
+  color: red;
+  font-weight: bold;
+}
+
+.message-area.message-success {
+  color: green;
+  font-weight: bold;
+}
+
+.message-area.message-loading, .message-area.message-info {
+  color: #555;
+}
+
+
+#adListContainer .no-image {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  border-radius: 4px;
+  font-size: 0.8em;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.ad-detail {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.ad-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.ad-detail h2 {
+  margin-top: 0;
+}
+
+.ad-detail .price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.ad-detail button {
+  background-color: #dc3545;
+  color: white;
+   margin-top: 10px;
+}
+
+.ad-detail button:hover {
+  background-color: #c82333;
+}
+
+
+.login-container, .register-container, #createAdContainer {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.login-container h2, .register-container h2, #createAdContainer h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.login-container label, .register-container label, #createAdContainer label, #createAdContainer .form-group > label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+#createAdContainer .form-group input[type="radio"] + label {
+  display: inline-block;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.register-container input[type="text"],
+.register-container input[type="password"],
+#createAdContainer input[type="text"],
+#createAdContainer input[type="number"],
+#createAdContainer textarea,
+#createAdContainer input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+#createAdContainer .form-group {
+  margin-bottom: 15px;
+}
+
+
+.login-container button, .register-container button, #createAdContainer button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.login-container button:hover, .register-container button:hover, #createAdContainer button:hover {
+  background-color: #0056b3;
+}
+
+
+#createAdContainer button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message, .message-area {
+  color: red;
+  margin-top: 10px;
+  min-height: 1.2em;
+}
